@@ -13,7 +13,7 @@ sudo phpenmod mysqli
 
 nano /etc/apache2/sites-enabled/000-default.conf
 ```
-
+```
 <VirtualHost *:80>
         #ServerName example.com
         #ServerAlias www.example.com
@@ -26,7 +26,7 @@ nano /etc/apache2/sites-enabled/000-default.conf
                 Allow from all
         </Directory>
 </VirtualHost>
-
+```
 ```
 cd /var/www/html
 rm -rf *
