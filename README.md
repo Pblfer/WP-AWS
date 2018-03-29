@@ -40,5 +40,6 @@ mv * /var/www/staging
 cd ..
 rmdir wordpress/
 
+sudo chown -R www-data:www-data /var/www/wordpress
 sudo service apache2 restart
 ```
