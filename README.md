@@ -43,3 +43,10 @@ rmdir wordpress/
 sudo chown -R www-data:www-data /var/www/wordpress
 sudo service apache2 restart
 ```
+
+# AWS PLUGIN INSTALL CURL
+``
+sudo apt-get install php5-curl
+nano /etc/php/7.2/cli/php.ini
+service apache2 restart
+``
