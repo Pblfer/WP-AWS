@@ -1,7 +1,7 @@
 # WP-AWS
 Install only wordpress on EC2 for make a real stack
 
-´´
+```
 sudo -s
 apt-get update
 apt-get upgrade
@@ -10,8 +10,9 @@ add-apt-repository ppa:ondrej/php
 apt-get update
 apt-get install php7.2
 sudo phpenmod mysqli
-´´
+
 nano /etc/apache2/sites-enabled/000-default.conf
+```
 
 <VirtualHost *:80>
         #ServerName example.com
@@ -26,6 +27,7 @@ nano /etc/apache2/sites-enabled/000-default.conf
         </Directory>
 </VirtualHost>
 
+```
 cd /var/www/html
 rm -rf *
 cd ../
@@ -39,3 +41,4 @@ cd ..
 rmdir wordpress
 
 sudo service apache2 restart
+```
