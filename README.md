@@ -9,7 +9,7 @@ apt-get install apache2 python-software-properties unzip
 add-apt-repository ppa:ondrej/php
 apt-get update
 apt-get install php7.2
-sudo phpenmod mysqli
+sudo apt-get install php-mysql
 
 nano /etc/apache2/sites-enabled/000-default.conf
 ```
@@ -35,10 +35,10 @@ mkdir staging
 cd staging
 wget https://wordpress.org/latest.zip
 unzip latest.zip
-cd /wordpress
+cd wordpress/
 mv * /var/www/staging
 cd ..
-rmdir wordpress
+rmdir wordpress/
 
 sudo service apache2 restart
 ```
