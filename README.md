@@ -39,8 +39,9 @@ cd wordpress/
 mv * /var/www/staging
 cd ..
 rmdir wordpress/
+rm latest.zip
 
-sudo chown -R www-data:www-data /var/www/wordpress
+sudo chown -R www-data:www-data /var/www/staging
 sudo service apache2 restart
 ```
 
