@@ -15,15 +15,15 @@ nano /etc/apache2/sites-enabled/000-default.conf
 ```
 ```
 <VirtualHost *:80>
-        #ServerName example.com
-        #ServerAlias www.example.com
+        #ServerName dantta.com
+        #ServerAlias *.dantta.com A 34.195.202.25
         DocumentRoot /var/www/staging
 
         <Directory /var/www/staging>
-                Options -Indexes
-                AllowOverride All
-                Order allow,deny
-                Allow from all
+        Options -Indexes
+        AllowOverride All
+        Order allow,deny
+        Allow from all
         </Directory>
 </VirtualHost>
 ```
